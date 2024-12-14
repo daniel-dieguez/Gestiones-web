@@ -1,0 +1,54 @@
+/* style.module.css */
+.container {
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .rowCenter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--font-color-primary);
+    padding: 15px;
+  }
+  
+  .heading,
+  .cardTitle {
+    color: var(--primary-color);
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--font-color-primary);
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .deleteButton {
+    background-color: var(--danger-color);
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .deleteButton:hover {
+    background-color: var(--danger-hover);
+  }
+  
+  .label,
+  .formGroup {
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 8px;
+    border-radius: var(--border-radius);
+  }
