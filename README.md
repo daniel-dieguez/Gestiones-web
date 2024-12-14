@@ -45,15 +45,6 @@ Este proyecto es una aplicación web para la gestión de solicitudes del **Comit
 2. API backend en funcionamiento (ver sección de backend).
 ---
 
-## 🖼 **Capturas de Pantalla**
-
-### Página Principal:
-![Página Principal](https://via.placeholder.com/800x400)
-
-### Modal de Actualización:
-![Modal de Actualización](https://via.placeholder.com/800x400)
-
----
 
 ## 📚 **Estructura del Proyecto**
 ```plaintext
