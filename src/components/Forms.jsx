@@ -22,7 +22,7 @@ export default function Forms() {
 
 
 
-    const urlGet = `http://localhost:35211/gestiones/viewAll`;
+    const urlGet = `http://localhost:8080/gestiones/viewAll`;
 
 
     const getApi = async () => {
@@ -44,7 +44,7 @@ export default function Forms() {
         }
     };
 
-    const urlPost = `http://localhost:35211/gestiones/newSolicitud`;
+    const urlPost = `http://localhost:8080/gestiones/newSolicitud`;
 
     const dataPost = { tipo_solicitud: solicitud };
 

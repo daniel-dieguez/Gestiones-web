@@ -22,7 +22,7 @@ export default function ModalSearch({ getApi }) {
 
 
 
-    const urlGetSeach = `http://localhost:35211/gestiones/${palabraClave}`;
+    const urlGetSeach = `http://localhost:8080/gestiones/${palabraClave}`;
 
 
 
@@ -39,7 +39,7 @@ export default function ModalSearch({ getApi }) {
     };
 
     const handleDeletee = async (solicitud) => {
-        const urlDelete = `http://localhost:35211/gestion/delete/${solicitud}`
+        const urlDelete = `http://localhost:8080/gestion/delete/${solicitud}`
         try {
             const response = await fetch(urlDelete, {
                 method: 'DELETE',

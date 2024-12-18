@@ -18,7 +18,7 @@ export default function ModalUpdate({ solicitud, getApi }) {
             return; 
         }
 
-        const urlPut = `http://localhost:35211/gestiones/updateGestion/${solicitud}`;
+        const urlPut = `http://localhost:8080/gestiones/updateGestion/${solicitud}`;
 
         const dataToUpdate = {
             tipo_solicitud: gestion,  
