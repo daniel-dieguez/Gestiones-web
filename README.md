@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Comité Olímpico Guatemalteco - Gestión de Solicitudes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web para la gestión de solicitudes del **Comité Olímpico Guatemalteco**. Proporciona una interfaz interactiva para crear, buscar, actualizar y eliminar solicitudes, conectándose a una API backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 **Características**
 
-### `npm start`
+- **Gestión de Solicitudes**:
+  - Crear nuevas solicitudes.
+  - Buscar solicitudes mediante palabras clave.
+  - Actualizar solicitudes existentes.
+  - Eliminar solicitudes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Diseño Responsivo y Moderno**:
+  - Compatible con dispositivos móviles, tablets y escritorios.
+  - Interfaz visual atractiva con tarjetas estilizadas y colores corporativos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Notificaciones en Tiempo Real**:
+  - Alertas visuales (Swal) para confirmar operaciones exitosas o informar errores.
 
-### `npm test`
+- **Componentización con React**:
+  - Componentes reutilizables como formularios, modales y tarjetas para organización modular.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 **Tecnologías Utilizadas**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend:
+- **React.js**: Biblioteca principal para construir la interfaz de usuario.
+- **CSS Modules**: Para estilos aislados y personalizados.
+- **Bootstrap**: Para una maquetación y diseño responsivo.
+- **SweetAlert2 (Swal)**: Para alertas visuales atractivas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend:
+- **ASP.NET Core**: Framework para el desarrollo de la API REST.
+- **Entity Framework Core**: Para la interacción con la base de datos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 **Instalación y Uso**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Requisitos Previos**
+1. Node.js instalado.
+2. API backend en funcionamiento (ver sección de backend).
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📚 **Estructura del Proyecto**
+```plaintext
+/
+├── src
+│   ├── components
+│   │   ├── Forms.jsx       # Componente principal de formularios
+│   │   ├── ModalSearch.jsx # Modal para búsqueda de solicitudes
+│   │   └── ModalUpdate.jsx # Modal para actualizar solicitudes
+│   ├── style
+│   │   └── start.module.css # Estilos personalizados
+│   └── App.js              # Componente raíz de la aplicación
+├── public
+│   └── index.html          # Archivo HTML principal
+└── package.json            # Dependencias y scripts del proyecto
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🌐 **API Endpoints (Backend)**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A continuación, los endpoints principales que el frontend consume:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **GET** `/gestiones/viewAll` - Obtener todas las solicitudes.
+- **POST** `/gestiones/newSolicitud` - Crear una nueva solicitud.
+- **PUT** `/gestiones/updateGestion/{id}` - Actualizar una solicitud existente.
+- **DELETE** `/gestion/delete/{id}` - Eliminar una solicitud.
+- **GET** `/gestiones/{palabraClave}` - Buscar solicitudes por palabra clave.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
